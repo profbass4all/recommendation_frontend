@@ -121,7 +121,7 @@ function Movie() {
     })
   return (
     <>
-      <div className="flex justify-center items-center h-screen">
+      <div className="flex justify-center mx-6 my-6 items-center h-screen">
         <div className="bg-green-200 rounded-t-2xl h-40 shadow-md"></div>
         <div className="p-4 bg-green-900 rounded-b-2xl md:h-75 shadow-md">
           <h2 className="text-gray-100 font-bold text-lg">
@@ -159,7 +159,7 @@ function Movie() {
           </p>
         </div>
       </div>
-        <h2 className="text-green-400 text-6xl mx-6 text-center font-bold mb-16">
+        <h2 className="text-green-400 md:text-6xl text-2xl mx-6 text-center font-bold mb-16">
             Recommendations
         </h2>
         <div className="flex flex-wrap justify-center items-center mx-6">
