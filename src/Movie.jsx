@@ -37,7 +37,7 @@ function Movie() {
           headers: {
             "Content-Type": "application/json",
           },
-        });
+        })
 
         if (!response.ok) {
           const errorBody = await response.text()
@@ -58,7 +58,7 @@ function Movie() {
     
     if(loading){
         return (
-            <div className='flex justify-center items-center h-screen'>
+            <div className='flex justify-center items-center'>
                 <h2 className='text-green-400 text-2xl '>Loading...</h2>
             </div>
         )
@@ -159,10 +159,10 @@ function Movie() {
           </p>
         </div>
       </div>
-        <h2 className="text-green-400 text-6xl text-center font-bold mb-16">
+        <h2 className="text-green-400 text-6xl mx-6 text-center font-bold mb-16">
             Recommendations
         </h2>
-        <div className="flex flex-wrap justify-center items-center">
+        <div className="flex flex-wrap justify-center items-center mx-6">
             {recommendationsList.length === 0 ? (
                 <h2 className="text-red-400 text-2xl">No recommendations found</h2>
             ) : (

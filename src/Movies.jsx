@@ -9,7 +9,7 @@ function Movies() {
 
 if(loading){
   return (
-    <div className='flex justify-center items-center h-screen'>
+    <div className='flex justify-center items-center'>
       <h2 className='text-green-400 text-2xl '>Loading...</h2>
     </div>
   )
